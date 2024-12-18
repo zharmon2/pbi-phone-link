@@ -1,0 +1,11 @@
+<script>
+    // This will do nothing but redirect to the phone number in the arg "phone"
+    // This is a simple way to redirect to a phone number
+
+    const phone = window.location.search.split('phone=')[1];
+    if (phone) {
+        window.location.href = `tel:${phone}`;
+    }
+
+
+</script>
